@@ -42,11 +42,8 @@ def sum_array(array)
 end  
 
 def add_s(array)
-   i = 0 
-  while i < array.length
-    array[i] += "s" if i != 1 
-    i += 1
-   end
-  
-  return array
+  array.map.with_index do |word, i| 
+    word += "s" if i != 2
+  end 
+end
 end  
