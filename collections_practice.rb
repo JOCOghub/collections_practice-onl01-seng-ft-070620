@@ -43,6 +43,6 @@ end
 
 def add_s(array)
   array.map.with_index do |word, i| 
-    word += "s" if i != 2
+    word += "s" if i != 1
   end 
  end
