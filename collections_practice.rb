@@ -42,7 +42,7 @@ def sum_array(array)
 end  
 
 def add_s(array)
-  array.map.with_index do |word, i| 
+  new_arr = array.map.with_index do |word, i| 
     word += "s" if i != 1
   end 
- end
+end 
